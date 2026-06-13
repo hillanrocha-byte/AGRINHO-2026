@@ -1,1 +1,23 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("agroForm");
 
+    form.addEventListener("submit", function (event) {
+        // Impede o envio padrão do formulário (recarregar a página)
+        event.preventDefault();
+
+        // Pega os valores dos campos
+        const nome = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+
+        // Validação simples
+        if (nome && email) {
+            // Mostra a mensagem de sucesso
+            alert(`Obrigado pelo contato, ${nome}! Nossa equipe do Agro Forte responderá em breve no e-mail: ${email}.`);
+            
+            // Limpa o formulário
+            form.reset();
+        } else {
+            alert("Por favor, preencha todos os campos.");
+        }
+    });
+});
