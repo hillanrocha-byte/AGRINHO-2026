@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte - O Futuro da Terra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <div class="logo">Agro<span>Forte</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>A força que alimenta o mundo</h1>
+            <p>Tecnologia, sustentabilidade e inovação no campo.</p>
+            <a href="#sobre" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <h2>O Agro não para</h2>
+        <p>O setor agrícola é o motor da nossa economia. Unindo a tradição do manejo da terra com a tecnologia de ponta, o Agro Forte garante alimento de qualidade na mesa de milhões de pessoas, respeitando o meio ambiente e impulsionando o futuro.</p>
+    </section>
+
+    <section id="galeria" class="gallery">
+        <h2>Nossa Produção</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=500&q=80" alt="Plantação de trigo dourado">
+                <p>Grãos de Alta Qualidade</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=500&q=80" alt="Trator tecnológico no campo">
+                <p>Tecnologia no Campo</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb18865?auto=format&fit=crop&w=500&q=80" alt="Cultivo sustentável em estufa">
+                <p>Sustentabilidade</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <h2>Fale Conosco</h2>
+        <form id="agroForm">
+            <input type="text" id="nome" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu E-mail" required>
+            <textarea id="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Agro Forte. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
